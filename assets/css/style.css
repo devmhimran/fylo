@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --first-color: #1c2230;
+    --second-color: #181e2a;
+    /* ========== Logo ========== */
+    --logo: #fff;
+
+    /* ========== Heading ========== */
+    --heading-color: #fff;
+    --heading-size: 36px;
+    --heading-height: 45px;
+     /* ========== Paragraph ========== */
+    --para-color: #fff;
+    --para-size: 16px;  
+    --para-height: 28px;
+    /* ========== Small ========== */
+    --small-color: #fff;
+    --small-size: 14px;
+    --small-height: 26px;
+    /* ========== Icon ========== */
+    --icon-color: #fff;
+    --icon-size: 24px;
+}
+body{
+    
+}
