@@ -6,8 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --first-color: #1c2230;
-    --second-color: #181e2a;
+
+    --scroll-color: #8cdae4;
+    --first-color: #1B222F;
+    --second-color:#181F2B;
     /* ========== Logo ========== */
     --logo: #fff;
     /* ========== Menu ========== */
@@ -17,6 +19,10 @@
     --heading-color: #fff;
     --heading-size: 36px;
     --heading-height: 55px;
+    /* ========== Heading ========== */
+    --second-heading-color: #fff;
+    --second-heading-size: 20px;
+    --second-heading-height: ;
 
      /* ========== Paragraph ========== */
     --para-color: #fff;
@@ -28,14 +34,18 @@
     --small-height: 26px;
     /* ========== Icon ========== */
     --icon-color: #fff;
-    --icon-size: 24px;
+    --icon-size: .32px;
 }
 body{
     background-color: var(--first-color);
 }
 /* Scroll Bar Start */
 ::-webkit-scrollbar{
-
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, var(--scroll-color));
+    border-radius: 6px;
 }
 /* Scroll Bar Start */
 /* Header star */
@@ -134,22 +144,34 @@ body{
   }
 /* Header End */
 /* First Section start */
+.first_section {
+    /* background-color: var(--first-color); */
+    background-color: var(--first-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--first-color);
+    background-image: url(./assets/img/bg-curvy-desktop.svg);
+    background-position: center center; */
+}
 .first_section .hero_img{
-  
+    margin: auto;
+    width: 50%;
+   
 }
 .first_section .hero_img img{
+    margin: auto;
     width: 550px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
    
 }
 .first_section .hero_txt{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .first_section .hero_txt h1{
     font-size: var(--heading-size);
@@ -168,3 +190,34 @@ body{
     margin-right: 100px;
 }
 /* First Section End */
+/* Second Section Start */
+.second-section{
+    width: 70%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 40px 40px;
+    
+}
+.second-section .card .card-image img{
+    width: 70px;
+    margin-bottom: 20px;
+}
+.second-section .card .card-title {
+    text-align: center;
+    color: var(--second-heading-color);
+    font-size: var(--second-heading-size);
+    font-weight: 500;
+}
+.second-section .card .card-para {
+    text-align: center;
+    color: var(--para-color);
+    font-size: var(--para-size);
+}
+/* Second Section End */
+/* Third Section Start */
+
+/* Third Section End */
