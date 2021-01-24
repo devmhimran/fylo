@@ -10,11 +10,14 @@
     --second-color: #181e2a;
     /* ========== Logo ========== */
     --logo: #fff;
-
+    /* ========== Menu ========== */
+    --menu-text-color: #fff;
+    --menu-font-size: 14px;
     /* ========== Heading ========== */
     --heading-color: #fff;
     --heading-size: 36px;
     --heading-height: 45px;
+
      /* ========== Paragraph ========== */
     --para-color: #fff;
     --para-size: 16px;  
@@ -28,5 +31,101 @@
     --icon-size: 24px;
 }
 body{
-    
+    background-color: var(--first-color);
 }
+/* Header star */
+/* ======== Nav Bar Start ======== */
+.cg-header{
+    height: 100px;
+    padding: 0 20px;
+    
+  }
+  .logo img{
+    margin-top: 30px;
+    width: 120px;
+    float: left;
+  }
+  .cg-menu{
+    float: right;
+    line-height: 100px;
+  }
+  .cg-menu a{
+    color: var(--menu-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: var(--menu-font-size);
+    padding: 0 10px;
+  
+  }
+  .show-menu-btn, .hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #5E888C;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .cg-menu a:hover{
+    color: #5E888C;
+    border-bottom: 2px solid var(--menu-text-color) ;
+    
+    transition: 0.7s;
+    
+  }
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #5E888C;
+  }
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  
+  @media screen and (max-width: 800px ) {
+    .show-menu-btn{
+        display: block;
+    }
+    .hide-menu-btn{
+        display: block;
+        color: #fff;
+    }
+    .cg-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5E888C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.5s ;
+        z-index: 999999;
+    }
+    .cg-menu a{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        
+    }
+    .cg-menu a:hover{
+        color: #ADD7DB;
+    }
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .cg-menu{
+        right: 0;
+    }
+  }
+/* Header End */
+First
