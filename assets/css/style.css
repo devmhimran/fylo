@@ -219,5 +219,34 @@ body{
 }
 /* Second Section End */
 /* Third Section Start */
+.thrid-section{
 
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.thrid-section .third-section-right{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.thrid-section .third-section-right .tird-section-title{
+    color: var(--heading-color);
+    font-size: var(--heading-size);
+    line-height: var(--heading-height);
+    font-weight: 600;
+
+}
+.thrid-section .third-section-right .tird-section-para{
+    color: var(--para-color);
+    font-size: var(--para-size);
+    line-height: var(--para-height);
+    font-weight: 400;
+
+}
 /* Third Section End */
+
+
+
