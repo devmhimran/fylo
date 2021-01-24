@@ -30,8 +30,8 @@
     --para-height: 28px;
     /* ========== Small ========== */
     --small-color: #fff;
-    --small-size: 14px;
-    --small-height: 26px;
+    --small-size: 12px;
+    --small-height: 25px;
     /* ========== Icon ========== */
     --icon-color: #fff;
     --icon-size: .32px;
@@ -250,3 +250,43 @@ body{
 
 
 
+.fourth-section .card{
+    padding: 20px;
+    background-color: var(--second-color);
+}
+.fourth-section .card .fourth-section{
+    color: var(--para-color);
+    font-size: var(--para-size);
+    line-height: var(--para-height);
+    font-weight: 400;
+}
+.team-detail{
+    /* display: inline; */
+}
+.fourth-section .card .card-team-image{
+    /* display: inline; */
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.card-team-name {
+    position: absolute;
+    bottom: 18%;
+    left: 25%;
+    line-height: 0;
+    color: var(--para-color);
+    font-size: var(--second-heading-color);
+    font-weight: 600;
+}
+.fourth-section .card-team-des{
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    line-height: 0;
+    color: var(--para-color);
+    font-size: var(--small-size);
+    font-weight: 300;
+}
