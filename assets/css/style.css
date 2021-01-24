@@ -16,7 +16,7 @@
     /* ========== Heading ========== */
     --heading-color: #fff;
     --heading-size: 36px;
-    --heading-height: 45px;
+    --heading-height: 55px;
 
      /* ========== Paragraph ========== */
     --para-color: #fff;
@@ -33,6 +33,11 @@
 body{
     background-color: var(--first-color);
 }
+/* Scroll Bar Start */
+::-webkit-scrollbar{
+
+}
+/* Scroll Bar Start */
 /* Header star */
 /* ======== Nav Bar Start ======== */
 .cg-header{
@@ -128,4 +133,38 @@ body{
     }
   }
 /* Header End */
-First
+/* First Section start */
+.first_section .hero_img{
+  
+}
+.first_section .hero_img img{
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.first_section .hero_txt{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.first_section .hero_txt h1{
+    font-size: var(--heading-size);
+    font-weight: 600;
+    line-height: var(--heading-height);
+    color: var(--heading-color);
+    text-align: center;
+}
+.first_section .hero_paragraph p{
+    font-size: var(--para-size);
+    font-weight: 400;
+    line-height: var(--para-height);
+    color: var(--para-color);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* First Section End */
